@@ -10,6 +10,8 @@ import Cocoa
 
 class MainWindowController: NSWindowController {
     
+    var temperature = 68
+    
     override var windowNibName: String? {
         return "MainWindowController"
     }
