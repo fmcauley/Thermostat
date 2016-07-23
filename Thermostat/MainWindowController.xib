@@ -48,6 +48,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="makeWarmerWithSender:" target="-2" id="KkO-Xh-YYV"/>
+                        </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ps5-CC-d9B">
                         <rect key="frame" x="104" y="101" width="88" height="32"/>
@@ -56,6 +59,9 @@
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="makeCoolerWithSender:" target="-2" id="Aw4-vu-14E"/>
+                        </connections>
                     </button>
                 </subviews>
             </view>
