@@ -21,12 +21,19 @@ class MainWindowController: NSWindowController {
     }
     
     @IBAction func makeWarmer(sender: NSButton) {
-        let newTemperature = temperature + 1
-        setValue(newTemperature, forKey: "temperature")
+        willChangeValue(forKey: "temperature")
+        temperature += 1
+        didChangeValue(forKey: "temperature")
     }
     
     @IBAction func makeCooler(sender: NSButton) {
-        let newTemperature = temperature - 1
-        setValue(newTemperature, forKey: "temperature")
+       temperature -= 1
+        
     }
 }
+
+
+
+/** NOTES on KVO KVC BINDINGS
+ By default, Swift properties are not KVO-compliant, but there are two workarounds: you can explicitly trigger notification of the observers or you can make the property dynamic.
+ */
