@@ -26,6 +26,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <sliderCell key="cell" continuous="YES" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="right" sliderType="linear" id="53E-Aw-bqZ"/>
                         <connections>
+                            <binding destination="-2" name="enabled" keyPath="isOn" id="vCB-Cv-Mbr"/>
                             <binding destination="-2" name="value" keyPath="temperature" id="OGE-m1-gf2"/>
                         </connections>
                     </slider>
@@ -50,6 +51,7 @@
                         </buttonCell>
                         <connections>
                             <action selector="makeWarmerWithSender:" target="-2" id="KkO-Xh-YYV"/>
+                            <binding destination="-2" name="enabled" keyPath="isOn" id="Ppj-Dk-ZbT"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ps5-CC-d9B">
@@ -61,7 +63,19 @@
                         </buttonCell>
                         <connections>
                             <action selector="makeCoolerWithSender:" target="-2" id="Aw4-vu-14E"/>
+                            <binding destination="-2" name="enabled" keyPath="isOn" id="cXV-Mr-TYL"/>
                         </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hLN-2o-7rJ">
+                        <rect key="frame" x="197" y="19" width="78" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="recessed" title="Power" bezelStyle="recessed" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="62n-Gx-e3I">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES" changeBackground="YES" changeGray="YES"/>
+                            <font key="font" metaFont="systemBold" size="12"/>
+                            <connections>
+                                <binding destination="-2" name="value" keyPath="isOn" id="6BI-cX-wo3"/>
+                            </connections>
+                        </buttonCell>
                     </button>
                 </subviews>
             </view>

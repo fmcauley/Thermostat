@@ -11,6 +11,7 @@ import Cocoa
 class MainWindowController: NSWindowController {
     
     dynamic var temperature = 68
+    dynamic var isOn = true
     
     override var windowNibName: String? {
         return "MainWindowController"
